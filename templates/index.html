@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shifa's Portfolio</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">-->
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!--  <script src="{{ url_for('static', filename='js/script.js') }}"></script>-->
+
+</head>
+<body>
+
+  <!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+  <div class="container-fluid">
+   <a class="navbar-brand brand-text" href="#">SHIFA SHAIKH</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+<header class="hero-section text-white text-center d-flex align-items-center justify-content-center">
+  <div class="animated-text">
+    <h1 class="display-4 fw-bold glow-text">Transforming Ideas into Scalable Web Apps</h1>
+    <p class="lead fade-in">Full-Stack Developer | Python & Web Enthusiast</p>
+  </div>
+</header>
+
+
+
+
+  <!-- About Section -->
+<section id="about" class="about-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 section-title">About Me</h2>
+    <div class="row align-items-center">
+      <!-- Image -->
+      <div class="col-md-5 mb-4 mb-md-0 text-center">
+        <img src="{{ url_for('static', filename='image/profile.png') }}" alt="Shifa" class="img-fluid rounded-circle profile-pic">
+      </div>
+
+
+      <!-- Text -->
+      <div class="col-md-7">
+        <h3 class="fw-bold">Hi there! 👋</h3>
+        <p class="about-text">
+          I'm a passionate <strong>Full-Stack Developer</strong> with expertise in Python, JavaScript, Flask, and MySQL. I love transforming ideas into functional and elegant web applications. I'm also deeply interested in AI Product Management and continue to expand my knowledge daily.
+        </p>
+        <ul class="list-unstyled about-details">
+          <li><strong>🎓 Education:</strong> MCA Graduate</li>
+          <li><strong>🛠️ Tools:</strong> VS Code, PyCharm, PostMan</li>
+          <li><strong>🌐 Location:</strong> Pune, India</li>
+        </ul>
+      </div>
+      <a href="{{ url_for('static', filename='resume/Resume.pdf') }}"
+        class="btn btn-outline-info resume-btn mt-3"
+        download>
+        <i class="bi bi-download me-2"></i>Download Resume
+    </a>
+    </div>
+  </div>
+</section>
+
+
+
+ <section id="skills" class="skills-section py-5">
+  <div class="container">
+    <h2 class="text-center section-title mb-5 text-white">My Skills</h2>
+
+    <div class="row g-4 justify-content-center text-center">
+
+      <!-- HTML -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card">
+          <i class="bi bi-filetype-html skill-icon text-warning"></i>
+          <p>HTML5</p>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card">
+          <i class="bi bi-filetype-css skill-icon text-info"></i>
+          <p>CSS3</p>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card">
+          <i class="bi bi-filetype-js skill-icon text-warning"></i>
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <!-- Python -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card">
+          <i class="bi bi-filetype-py skill-icon text-light"></i>
+          <p>Python</p>
+        </div>
+      </div>
+
+      <!-- MySQL -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card">
+          <i class="bi bi-database-check skill-icon text-info"></i>
+          <p>MySQL</p>
+        </div>
+      </div>
+
+      <!-- Flask -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card">
+          <i class="bi bi-cup-hot-fill skill-icon text-light"></i>
+          <p>Flask</p>
+        </div>
+      </div>
+
+      <!-- Java -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card">
+          <i class="bi bi-cup-hot-fill skill-icon text-danger"></i>
+          <p>Java</p>
+        </div>
+      </div>
+
+      <!-- C -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card">
+          <i class="bi bi-terminal-dash skill-icon text-secondary"></i>
+          <p>C</p>
+        </div>
+      </div>
+
+      <!-- C++ -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card">
+          <i class="bi bi-terminal-fill skill-icon text-primary"></i>
+          <p>C++</p>
+        </div>
+      </div>
+
+      <!-- ASP.NET (C#) -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card">
+          <i class="bi bi-window-desktop skill-icon text-info"></i>
+          <p>ASP.NET (C#)</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <section id="projects" class="projects-section py-5">
+  <div class="container">
+    <h2 class="text-center section-title text-white mb-5">My Projects</h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Existing Project: Hostel Management System -->
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Hostel Management System</h5>
+            <p class="card-text">Built using PHP and MySQL to manage student registration, rooms, and admin dashboard.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- New: Online Shopping Website -->
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Online Shopping Website</h5>
+            <p class="card-text">Full-stack eCommerce platform using Python, Flask, and SQLAlchemy with user auth & cart.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- New: Job Application Form -->
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Job Application Form</h5>
+            <p class="card-text">A simple and responsive job application form built using only HTML and CSS.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- New: Parallax Website -->
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Parallax Website</h5>
+            <p class="card-text">Modern scrolling effect using CSS and JavaScript, perfect for portfolios or startups.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- New: Landing Page -->
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Landing Page</h5>
+            <p class="card-text">Attractive and professional landing page designed with HTML, CSS, and Bootstrap 5.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- New: Food Delivery Website -->
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Food Delivery Website</h5>
+            <p class="card-text">Responsive website UI for ordering food online with category filtering and cart design.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section py-5">
+  <div class="container">
+    <h2 class="text-center text-white mb-4">Get in Touch</h2>
+    <p class="text-center text-white-50 mb-5">Have a project in mind, or just want to say hi? Drop me a message!</p>
+
+    <form method="POST" action="/contact" class="contact-form mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="name" class="form-label text-white">Name</label>
+        <input type="text" class="form-control form-control-custom" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label text-white">Email</label>
+        <input type="email" class="form-control form-control-custom" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label text-white">Message</label>
+        <textarea class="form-control form-control-custom" id="message" name="message" rows="4" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-glow">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    © 2025 Shifa | All Rights Reserved
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Optional: Your own JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
