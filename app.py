@@ -22,6 +22,8 @@ def get_db_connection():
     client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=5000)
     return client['portfolio_db']
 
+
+
 # Home route
 @app.route("/")
 def index():
