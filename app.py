@@ -14,16 +14,13 @@ def get_db_connection():
     MONGO_URI = (
         "mongodb+srv://shaikhshifu15:3HUDrVwTMzirR1mx"
         "@portfolio.qnfwjlx.mongodb.net/portfolio_db"
-        "?retryWrites=true&w=majority&appName=portfolio"
+        "?retryWrites=true&w=majority"
+        "&appName=portfolio"
+        "&tlsInsecure=true"
     )
-    client = MongoClient(
-        MONGO_URI,
-        serverSelectionTimeoutMS=5000,
-        tls=True,
-        tlsAllowInvalidCertificates=True  # <-- skips cert validation
-    )
-    db = client['portfolio_db']      # your database name
-    return db
+
+    client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=5000)
+    return client['portfolio_db']
 
 # Home route
 @app.route("/")
